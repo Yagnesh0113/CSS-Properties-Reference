@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Properties Reference</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>CSS Properties Reference</h1>
+    <div class="search-container">
+        <label for="search">Search by property name:</label>
+        <input type="text" id="search" class="search-input" placeholder="Enter property name...">
+    </div>
+    <table id="property-table">
+        <thead>
+            <tr>
+                <th>Property</th>
+                <th>Description</th>
+                <th>Possible Values</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="property-name">background</td>
+                <td>Sets all the background properties in one declaration.</td>
+                <td>color image repeat attachment position size</td>
+            </tr>
+            <tr>
+                <td class="property-name">background-color</td>
+                <td>Sets the background color of an element.</td>
+                <td>color | transparent | inherit</td>
+            </tr>
+            <tr>
+                <td class="property-name">background-image</td>
+                <td>Sets the background image of an element.</td>
+                <td>url | none | inherit</td>
+            </tr>
+            <tr>
+                <td class="property-name">background-position</td>
+                <td>Sets the starting position of a background image.</td>
+                <td>left top | left center | left bottom | right top | right center | right bottom | center top | center center | center bottom</td>
+            </tr>
+            <tr>
+                <td class="property-name">background-repeat</td>
+                <td>Sets how a background image will be repeated.</td>
+                <td>repeat | repeat-x | repeat-y | no-repeat | inherit</td>
+            </tr>
+            <tr>
+                <td class="property-name">background-size</td>
+                <td>Specifies the size of the background image(s).</td>
+                <td>auto | cover | contain | length | percentage</td>
+            </tr>
+            <tr>
+                <td class="property-name">border</td>
+                <td>Sets all the border properties in one declaration.</td>
+                <td>width style color</td>
+            </tr>
+            <tr>
+                <td class="property-name">border-color</td>
+                <td>Sets the color of the four borders.</td>
+                <td>color | transparent | inherit</td>
+            </tr>
+            <tr>
+                <td class="property-name">border-style</td>
+                <td>Sets the style of the four borders.</td>
+                <td>none | hidden | dotted | dashed | solid | double | groove | ridge | inset | outset | inherit</td>
+            </tr>
+            <tr>
+                <td class="property-name">border-width</td>
+                <td>Sets the width of the four borders.</td>
+                <td>thin | medium | thick | length | inherit</td>
+            </tr>
+            <tr>
+                <td class="property-name">border-radius</td>
+                <td>Defines the radius of the element's corners.</td>
+                <td>length | percentage</td>
+            </tr>
+            <tr>
+                <td class="property-name">box-shadow</td>
+                <td>Attaches one or more shadows to an element.</td>
+                <td>none | h-offset v-offset blur spread color | inset</td>
+            </tr>
+            <tr>
+                <td class="property-name">color</td>
+                <td>Sets the color of text.</td>
+                <td>color | inherit</td>
+            </tr>
+            <tr>
+                <td class="property-name">display</td>
+                <td>Specifies the display behavior of an element.</td>
+                <td>inline | block | inline-block | flex | grid | none | inherit</td>
+            </tr>
+            <tr>
+                <td class="property-name">flex</td>
+                <td>Specifies the flexible length on flexible items.</td>
+                <td>none | [flex-grow flex-shrink flex-basis] | inherit</td>
+            </tr>
+            <tr>
+                <td class="property-name">font-family</td>
+                <td>Specifies the font family for text.</td>
+                <td>family-name | generic-family | inherit</td>
+            </tr>
+            <tr>
+                <td class="property-name">font-size</td>
+                <td>Specifies the font size of text.</td>
+                <td>xx-small | x-small | small | medium | large | x-large | xx-large | smaller | larger | length | percentage | inherit</td>
+            </tr>
+            <tr>
+                <td class="property-name">font-weight</td>
+                <td>Specifies the weight (boldness) of the font.</td>
+                <td>normal | bold | bolder | lighter | 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900 | inherit</td>
+            </tr>
+            <tr>
+                <td class="property-name">height</td>
+                <td>Sets the height of an element.</td>
+                <td>auto | length | percentage | inherit</td>
+            </tr>
+            <tr>
+                <td class="property-name">margin</td>
+                <td>Sets all the margin properties in one declaration.</td>
+                <td>length | percentage | auto | inherit</td>
+            </tr>
+            <tr>
+                <td class="property-name">padding</td>
+                <td>Sets all the padding properties in one declaration.</td>
+                <td>length | percentage | inherit</td>
+            </tr>
+            <tr>
+                <td class="property-name">position</td>
+                <td>Specifies the type of positioning method used for an element.</td>
+                <td>static | relative | absolute | fixed | sticky | inherit</td>
+            </tr>
+            <tr>
+                <td class="property-name">text-align</td>
+                <td>Specifies the horizontal alignment of text.</td>
+                <td>left | right | center | justify | inherit</td>
+            </tr>
+            <tr>
+                <td class="property-name">width</td>
+                <td>Sets the width of an element.</td>
+                <td>auto | length | percentage | inherit</td>
+            </tr>
+            <tr>
+                <td class="property-name">align-content</td>
+                <td>Aligns a flex container’s lines within when there is extra space in the cross-axis.</td>
+                <td>stretch | center | flex-start | flex-end | space-between | space-around | inherit</td>
+            </tr>
+            <tr>
+                <td class="property-name">align-items</td>
+                <td>Aligns flex items in the flex container.</td>
+                <td>stretch | center | flex-start | flex-end | baseline | inherit</td>
+            </tr>
+            <tr>
+                <td class="property-name">align-self</td>
+                <td>Aligns the flex item of the current line of the flex container.</td>
+                <td>auto | stretch | center | flex-start | flex-end | baseline | inherit</td>
+            </tr>
+            <tr>
+                <td class="property-name">animation</td>
+                <td>A shorthand property for all the animation properties.</td>
+                <td>name duration timing-function delay iteration-count direction fill-mode play-state</td>
+            </tr>
+            <tr>
+                <td class="property-name">animation-delay</td>
+                <td>Specifies when the animation will start.</td>
+                <td>time | inherit</td>
+            </tr>
+            <tr>
+                <td class="property-name">animation-duration</td>
+                <td>Specifies how long an animation should take to complete one cycle.</td>
+                <td>time | inherit</td>
+            </tr>
+            <tr>
+                <td class="property-name">animation-name</td>
+                <td>Specifies the name of the @keyframes animation.</td>
+                <td>none | keyframename | inherit</td>
+            </tr>
+            <tr>
+                <td class="property-name">border-collapse</td>
+                <td>Specifies whether or not table borders should collapse.</td>
+                <td>collapse | separate | inherit</td>
+            </tr>
+            <tr>
+                <td class="property-name">border-spacing</td>
+                <td>Sets the distance between the borders of adjacent cells.</td>
+                <td>length | inherit</td>
+            </tr>
+            <tr>
+                <td class="property-name">bottom</td>
+                <td>Specifies the bottom position of a positioned element.</td>
+                <td>auto | length | percentage | inherit</td>
+            </tr>
+            <tr>
+                <td class="property-name">clear</td>
+                <td>Specifies which sides of an element where other floating elements are not allowed.</td>
+                <td>none | left | right | both | inherit</td>
+            </tr>
+            <tr>
+                <td class="property-name">clip</td>
+                <td>Clips an absolutely positioned element.</td>
+                <td>rect(top, right, bottom, left) | auto | inherit</td>
+            </tr>
+            <tr>
+                <td class="property-name">content</td>
+                <td>Inserts generated content.</td>
+                <td>normal | none | counter | attr() | string | inherit</td>
+            </tr>
+            <tr>
+                <td class="property-name">cursor</td>
+                <td>Specifies the type of cursor to be displayed.</td>
+                <td>alias | all-scroll | auto | cell | context-menu | col-resize | copy | crosshair | default | e-resize | ew-resize | grab | grabbing | help | move | n-resize | ne-resize | nesw-resize | ns-resize | nw-resize | nwse-resize | no-drop | none | not-allowed | pointer | progress | row-resize | s-resize | se-resize | sw-resize | text | vertical-text | w-resize | wait | zoom-in | zoom-out | inherit</td>
+            </tr>
+            <tr>
+                <td class="property-name">direction</td>
+                <td>Specifies the text direction/writing direction.</td>
+                <td>ltr | rtl | inherit</td>
+            </tr>
+            <tr>
+                <td class="property-name">display</td>
+                <td>Specifies how an element is displayed.</td>
+                <td>inline | block | contents | flex | grid | inline-block | inline-flex | inline-grid | inline-table | list-item | none | run-in | table | table-caption | table-cell | table-column | table-column-group | table-footer-group | table-header-group | table-row | table-row-group | inherit</td>
+            </tr>
+            <tr>
+                <td class="property-name">filter</td>
+                <td>Adds graphical effects like blurring or color shifting to an element.</td>
+                <td>none | blur(px) | brightness(%) | contrast(%) | drop-shadow(h-shadow v-shadow blur spread color) | grayscale(%) | hue-rotate(deg) | invert(%) | opacity(%) | saturate(%) | sepia(%)</td>
+            </tr>
+            <tr>
+                <td class="property-name">float</td>
+                <td>Specifies whether or not a box should float.</td>
+                <td>none | left | right | inherit</td>
+            </tr>
+            <tr>
+                <td class="property-name">flex-direction</td>
+                <td>Specifies the direction of the flexible items.</td>
+                <td>row | row-reverse | column | column-reverse | inherit</td>
+            </tr>
+            <tr>
+                <td class="property-name">flex-wrap</td>
+                <td>Specifies whether the flexible items should wrap or not.</td>
+                <td>nowrap | wrap | wrap-reverse | inherit</td>
+            </tr>
+            <tr>
+                <td class="property-name">font</td>
+                <td>Sets all the font properties in one declaration.</td>
+                <td>font-style font-variant font-weight font-size/line-height font-family | inherit</td>
+            </tr>
+            <tr>
+                <td class="property-name">font-style</td>
+                <td>Specifies the font style for text.</td>
+                <td>normal | italic | oblique | inherit</td>
+            </tr>
+            <tr>
+                <td class="property-name">font-variant</td>
+                <td>Specifies whether or not a text should be displayed in a small-caps font.</td>
+                <td>normal | small-caps | inherit</td>
+            </tr>
+            <tr>
+                <td class="property-name">gap</td>
+                <td>Specifies the gaps (gutters) between rows and columns.</td>
+                <td>length | percentage | inherit</td>
+            </tr>
+            <tr>
+                <td class="property-name">grid</td>
+                <td>A shorthand property for the grid-template-rows, grid-template-columns, grid-template-areas, grid-auto-rows, grid-auto-columns, and grid-auto-flow properties.</td>
+                <td>none | subgrid | [ grid-template-rows grid-template-columns grid-template-areas grid-auto-rows grid-auto-columns grid-auto-flow ]</td>
+            </tr>
+            <tr>
+                <td class="property-name">grid-area</td>
+                <td>Specifies a grid item’s size and location in a grid layout.</td>
+                <td>name | span | [line1 / line2 / line3 / line4]</td>
+            </tr>
+            <tr>
+                <td class="property-name">grid-template</td>
+                <td>A shorthand property for the grid-template-rows, grid-template-columns, and grid-template-areas properties.</td>
+                <td>none | subgrid | [ grid-template-rows grid-template-columns grid-template-areas ]</td>
+            </tr>
+            <tr>
+                <td class="property-name">height</td>
+                <td>Sets the height of an element.</td>
+                <td>auto | length | percentage | inherit</td>
+            </tr>
+            <tr>
+                <td class="property-name">justify-content</td>
+                <td>Aligns the flexible container’s items when the items do not use all available space on the main-axis.</td>
+                <td>flex-start | flex-end | center | space-between | space-around | space-evenly | inherit</td>
+            </tr>
+            <tr>
+                <td class="property-name">left</td>
+                <td>Specifies the left position of a positioned element.</td>
+                <td>auto | length | percentage | inherit</td>
+            </tr>
+            <tr>
+                <td class="property-name">line-height</td>
+                <td>Sets the line height.</td>
+                <td>normal | number | length | percentage | inherit</td>
+            </tr>
+            <tr>
+                <td class="property-name">list-style</td>
+                <td>Sets all the properties for a list in one declaration.</td>
+                <td>list-style-type list-style-position list-style-image | inherit</td>
+            </tr>
+            <tr>
+                <td class="property-name">margin</td>
+                <td>Sets all the margin properties in one declaration.</td>
+                <td>length | percentage | auto | inherit</td>
+            </tr>
+            <tr>
+                <td class="property-name">max-height</td>
+                <td>Sets the maximum height of an element.</td>
+                <td>none | length | percentage | inherit</td>
+            </tr>
+            <tr>
+                <td class="property-name">max-width</td>
+                <td>Sets the maximum width of an element.</td>
+                <td>none | length | percentage | inherit</td>
+            </tr>
+            <tr>
+                <td class="property-name">min-height</td>
+                <td>Sets the minimum height of an element.</td>
+                <td>length | percentage | inherit</td>
+            </tr>
+            <tr>
+                <td class="property-name">min-width</td>
+                <td>Sets the minimum width of an element.</td>
+                <td>length | percentage | inherit</td>
+            </tr>
+            <tr>
+                <td class="property-name">object-fit</td>
+                <td>Specifies how the content of a replaced element, such as an <code>&lt;img&gt;</code> or <code>&lt;video&gt;</code>, should be resized to fit its container.</td>
+                <td>fill | contain | cover | none | scale-down</td>
+            </tr>
+            <tr>
+                <td class="property-name">opacity</td>
+                <td>Sets the opacity level for an element (0 is fully transparent and 1 is fully opaque).</td>
+                <td>number | inherit</td>
+            </tr>
+            <tr>
+                <td class="property-name">overflow</td>
+                <td>Specifies what happens if content overflows an element's box.</td>
+                <td>visible | hidden | scroll | auto | inherit</td>
+            </tr>
+            <tr>
+                <td class="property-name">padding</td>
+                <td>Sets all the padding properties in one declaration.</td>
+                <td>length | percentage | inherit</td>
+            </tr>
+            <tr>
+                <td class="property-name">position</td>
+                <td>Specifies the type of positioning method used for an element.</td>
+                <td>static | relative | absolute | fixed | sticky | inherit</td>
+            </tr>
+            <tr>
+                <td class="property-name">right</td>
+                <td>Specifies the right position of a positioned element.</td>
+                <td>auto | length | percentage | inherit</td>
+            </tr>
+            <tr>
+                <td class="property-name">text-align</td>
+                <td>Specifies the horizontal alignment of text.</td>
+                <td>left | right | center | justify | inherit</td>
+            </tr>
+            <tr>
+                <td class="property-name">top</td>
+                <td>Specifies the top position of a positioned element.</td>
+                <td>auto | length | percentage | inherit</td>
+            </tr>
+            <tr>
+                <td class="property-name">transition</td>
+                <td>A shorthand property for the four transition properties.</td>
+                <td>property duration timing-function delay</td>
+            </tr>
+            <tr>
+                <td class="property-name">visibility</td>
+                <td>Specifies whether or not an element is visible.</td>
+                <td>visible | hidden | collapse | inherit</td>
+            </tr>
+            <tr>
+                <td class="property-name">width</td>
+                <td>Sets the width of an element.</td>
+                <td>auto | length | percentage | inherit</td>
+            </tr>
+            <tr>
+                <td class="property-name">z-index</td>
+                <td>Specifies the stack order of an element.</td>
+                <td>auto | number | inherit</td>
+            </tr>
+        </tbody>
+    </table>
+    <script src="./script.js"></script>
+</body>
+</html>
